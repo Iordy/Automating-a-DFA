@@ -31,11 +31,17 @@ DFA *automata = new DFA();
         }
         cout<<endl;}
     
+    int cuvinte = 0;
+    cout<<"Introdu cate cuvinte vrei sa testezi"<<endl;
+    cin>>cuvinte;
+    for(int i = 0; i < cuvinte; i++){
+        
     cout<<"Introdu cuvantul pe care vrei sa il testezi:"<<endl;
     cin>>word;
     reverse(word.begin(), word.end());
     automata->next_node(0, word, circuit);
     
+    }
     
 
 
